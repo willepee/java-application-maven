@@ -51,7 +51,7 @@ jobs:
       with:
         username: ${{ github.actor }}
         registry: ${{ env.REGISTRY }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+     #   password: ${{ secrets.GITHUB_TOKEN }}
     - name: Download artifact2
       uses: actions/download-artifact@v2
 
@@ -68,4 +68,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ env.REGISTRY }}/yannick:v2
+        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}/yannick:v2
