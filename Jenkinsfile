@@ -18,6 +18,24 @@ pipeline {
     
     } 
     
+    stage ('Docker build') {
+      steps {
+      
+      sh 'docker build -t devopstrainingschool/jenkins-java-maven .'
+      
+      }
+    
+    
+    
+    }
+   
+    
+    
+    
+    
+    
+    
+    
   }
   
   
