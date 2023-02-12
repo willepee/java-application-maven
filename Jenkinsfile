@@ -10,6 +10,14 @@ pipeline {
       }
   
     }
+    
+    stage ("Maven build") {
+      steps {
+      sh 'mvn build'
+      }
+    
+    } 
+    
   }
   
   
