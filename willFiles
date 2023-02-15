@@ -1,16 +1,16 @@
-pipeline (
+pipeline {
   agent any
-    tools (
-      maven 'maven'   
-    )
-   stages (
-      satge ('maven clean')(
-       steps (
-        sh 'mvn clean'
-          )
-       
-   )
-)
+  tools {
+    maven "maven"
+  }
+  stages {
+    stage ('Maven clean') {
+      steps {
+      sh 'mvn clean'
+      }
+  
+    }
+    
    
    
    
@@ -21,7 +21,7 @@ pipeline (
    
    
    
-)
+
   
 
 
@@ -34,7 +34,7 @@ pipeline (
 
 
 
-
+}
 
 
 
