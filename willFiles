@@ -1,0 +1,68 @@
+pipeline (
+  agent any
+    tools (
+      maven 'maven'   
+    )
+   stages (
+      satge ('maven clean')(
+       steps (
+        sh 'mvn clean'
+          )
+       
+   )
+)
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
